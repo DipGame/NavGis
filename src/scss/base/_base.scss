@@ -1,13 +1,15 @@
 $color-black: #000;
 $color-black-1: #1A1A1A;
 $color-grey: #F7F7F7;
+$color-grey-2: #A1A1AA;
 $color-blue: #11357D;
+$color-white: #FFF;
 
 * {
 	box-sizing: border-box !important;
 	background-repeat: no-repeat !important;
 	word-break: break-word !important;
-	color: $color-black;
+	color: $color-black-1;
 }
 
 html {
@@ -19,7 +21,7 @@ body {
 	// overflow-y: scroll;
 	font-family: Inter;
 	// position: relative;
-	background-color: $color-white-2;
+	// background-color: $color-white-2;
 }
 
 .no-scroll {
@@ -34,28 +36,28 @@ span,
 section,
 td,
 button {
-	font-family: Inter;
+	font-family: Geologica;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 24px;
-	letter-spacing: 0px;
+	letter-spacing: 0%;
 }
 
 h1 {
-	font-family: Unbounded;
-	font-weight: 500;
-	font-size: 36px;
-	line-height: 44.64px;
+	font-family: Geologica;
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 60px;
 	letter-spacing: 0%;
 	word-wrap: break-word;
 }
 
 h2 {
-	font-family: Unbounded;
-	font-weight: 500;
-	font-size: 36px;
-	line-height: 44.64px;
-	letter-spacing: 0px;
+	font-family: Geologica;
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 60px;
+	letter-spacing: 0%;
 }
 
 .def_div {
@@ -71,53 +73,53 @@ h2 {
 h1.title {
 	margin: 50px auto 30px;
 	width: 100%;
-	max-width: 1326px;
-	padding: 0 16px;
+	max-width: 1320px;
+	padding: 0 15px;
 	text-transform: uppercase;
 }
 
 
 @media (max-width: 500px) {
-	h1.title {
-		margin: 50px  auto 30px;
-	}
+	// h1.title {
+	// 	margin: 50px auto 30px;
+	// }
 
-	.def_title {
-		margin-bottom: 20px;
-	}
+	// .def_title {
+	// 	margin-bottom: 20px;
+	// }
 
-	.mob_center {
-		text-align: center;
-	}
+	// .mob_center {
+	// 	text-align: center;
+	// }
 }
 
 h3,
 h4,
 h5,
 h6 {
-	font-family: Unbounded;
-	font-weight: 500;
-	font-size: 18px;
-	line-height: 22.32px;
+	font-family: Geologica;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 32px;
 	letter-spacing: 0%;
 }
 
 @media (max-width: 500px) {
 
-	h1 {
-		font-family: Unbounded;
-		font-weight: 500;
-		font-size: 30px;
-		line-height: 37.2px;
-		letter-spacing: 0%;
-	}
+	// h1 {
+	// 	font-family: Unbounded;
+	// 	font-weight: 500;
+	// 	font-size: 30px;
+	// 	line-height: 37.2px;
+	// 	letter-spacing: 0%;
+	// }
 
 	h2 {
-		font-family: Unbounded;
-		font-weight: 500;
-		font-size: 30px;
-		line-height: 37.2px;
-		letter-spacing: 0px;
+		font-family: Geologica;
+		font-weight: 700;
+		font-size: 36px;
+		line-height: 45px;
+		letter-spacing: 0%;
 	}
 
 	div,
@@ -127,10 +129,10 @@ h6 {
 	span,
 	section,
 	button {
-		font-family: Inter;
+		font-family: Geologica;
 		font-weight: 400;
 		font-size: 14px;
-		line-height: 22px;
+		line-height: 24px;
 		letter-spacing: 0px;
 	}
 
@@ -138,10 +140,10 @@ h6 {
 	h4,
 	h5,
 	h6 {
-		font-family: Unbounded;
-		font-weight: 500;
-		font-size: 16px;
-		line-height: 19.84px;
+		font-family: Geologica;
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 32px;
 		letter-spacing: 0%;
 	}
 }
@@ -149,12 +151,12 @@ h6 {
 a {
 	text-decoration: none;
 	transition: .5s;
-	cursor: $cursor-hover-white;
+	cursor: pointer;
 }
 
 a:hover {
 	transition: .5s;
-	color: $color-btn-1 !important;
+	color: $color-blue !important;
 }
 
 main {
@@ -164,7 +166,7 @@ main {
 }
 
 .padding {
-	padding: 0 16px;
+	padding: 0 15px;
 }
 
 .margin_bot {
@@ -200,143 +202,57 @@ main {
 }
 
 .button {
-	font-family: Inter;
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 19.36px;
-	letter-spacing: 0px;
-	text-align: center;
-	color: $color-white;
-	height: 60px;
-	width: 100%;
-	background-color: $color-btn-1;
-	transition: .5s;
-	cursor: $cursor-hover-white;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border-radius: 8px;
-	padding: 5px 10px;
-}
-
-.button:hover {
-	background-color: $color-btn-1-hover;
-	transition: .5s;
-	color: $color-white !important;
-}
-
-.button_v2 {
-	font-family: Inter;
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 19.36px;
-	letter-spacing: 0px;
-	text-align: center;
-	color: $color-white;
-	height: 60px;
-	width: 100%;
-	background: none;
-	border: 1px solid $color-white;
-	transition: .5s;
-	cursor: $cursor-hover-white;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border-radius: 8px;
-	padding: 5px 10px;
-}
-
-.button_v2:hover {
-	background-color: $color-btn-1-hover;
-	border: 1px solid $color-btn-1-hover;
-	transition: .5s;
-	color: $color-white !important;
-}
-
-.button_v3 {
-	font-family: Inter;
-	font-weight: 500;
+	font-family: Geologica;
+	font-weight: 600;
 	font-size: 14px;
-	line-height: 16.94px;
-	letter-spacing: 0px;
-	color: $color-btn-1;
-	height: 40px;
-	width: 100%;
-	background: none;
-	border: 1px solid $color-btn-1;
-	transition: .5s;
-	cursor: $cursor-hover-white;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border-radius: 50px;
-	padding: 5px 10px;
-}
-
-.button_v3:hover {
-	background-color: $color-btn-1-hover;
-	border: 1px solid $color-btn-1-hover;
-	transition: .5s;
-	color: $color-white !important;
-}
-
-.button_v4 {
-	font-family: Inter;
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 19.36px;
-	letter-spacing: 0px;
+	line-height: 17.5px;
+	letter-spacing: 0%;
 	text-align: center;
 	color: $color-white;
 	height: 50px;
 	width: 100%;
-	background: $color-black;
-	border: none;
 	transition: .5s;
-	cursor: $cursor-hover-white;
+	cursor: pointer;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	border-radius: 8px;
 	padding: 5px 10px;
+	border: 1px solid $color-white;
 }
 
-.button_v4:hover {
-	background-color: $color-btn-1-hover;
+.button:hover {
+	background-color: $color-white;
 	transition: .5s;
-	color: $color-white !important;
+	color: $color-blue !important;
+	border: 1px solid $color-white;
 }
 
-.button_v4:disabled {
-	background-color: $color-white-2;
-	border: 1px slod $color-white-2;
-}
-
-.button_v5 {
-	font-family: Inter;
-	font-weight: 500;
+.button_v2 {
+	font-family: Geologica;
+	font-weight: 600;
 	font-size: 14px;
-	line-height: 16.94px;
-	letter-spacing: 0px;
-	color: $color-black;
-	height: 40px;
+	line-height: 17.5px;
+	letter-spacing: 0%;
+	text-align: center;
+	color: $color-blue;
+	height: 50px;
 	width: 100%;
-	background: $color-white;
-	border: 1px solid $color-white-2;
 	transition: .5s;
-	cursor: $cursor-hover-white;
+	cursor: pointer;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border-radius: 50px;
+	border-radius: 8px;
 	padding: 5px 10px;
+	border: 1px solid $color-blue;
 }
 
-.button_v5:hover {
-	background-color: $color-btn-1-hover;
-	border: 1px solid $color-btn-1-hover;
+.button_v2:hover {
+	background-color: $color-blue;
+	border: 1px solid $color-blue;
 	transition: .5s;
-	color: $color-white !important;
+	color: $color-blue !important;
 }
 
 button:disabled {
@@ -350,7 +266,7 @@ button:disabled:hover {
 }
 
 .button:disabled:hover {
-	background-color: $color-btn-1;
+	// background-color: $color-btn-1;
 	opacity: .6 !important;
 	cursor: default !important;
 }
@@ -364,15 +280,15 @@ button:disabled:hover {
 	opacity: .6;
 	cursor: default;
 	background: none;
-	border: 1px solid $color-white;
+	// border: 1px solid $color-white;
 }
 
 .hover_color {
-	color: $color-btn-1;
+	color: $color-blue;
 }
 
 .hover_back_color {
-	background-color: $color-btn-1-hover;
+	// background-color: $color-btn-1-hover;
 }
 
 .invise {
@@ -395,7 +311,7 @@ button:disabled:hover {
 }
 
 .default a {
-	color: $color-btn-1;
+	color: $color-blue;
 	text-decoration: underline;
 	display: inline-block;
 }
@@ -422,7 +338,7 @@ button:disabled:hover {
 }
 
 .default ul li::marker {
-	color: $color-black;
+	color: $color-black-1;
 }
 
 .default table {
@@ -459,28 +375,25 @@ button:disabled:hover {
 		gap: 12px;
 		align-items: center;
 		flex-wrap: wrap;
-		margin-bottom: 12px;
+		padding: 20px 15px;
+		width: 100px;
+		max-width: 1320px;
 
 		li {
-			font-family: Inter;
+			font-family: Geologica;
 			font-weight: 400;
-			font-size: 14px;
-			line-height: 16.94px;
-			letter-spacing: 0px;
-			color: #605F5F;
+			font-size: 12px;
+			line-height: 15px;
+			letter-spacing: 0%;
+			color: $color-grey-2;
 
 			a {
-				font-family: Inter;
+				font-family: Geologica;
 				font-weight: 400;
-				font-size: 14px;
-				line-height: 16.94px;
-				letter-spacing: 0px;
-				color: #605F5F;
-			}
-
-			svg {
-				position: relative;
-				top: 2px;
+				font-size: 12px;
+				line-height: 15px;
+				letter-spacing: 0%;
+				color: $color-black;
 			}
 		}
 	}
