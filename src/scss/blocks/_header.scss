@@ -214,11 +214,33 @@ header {
     .header_cont .hidd_cont .mob_cont {
         display: none;
     }
+
+    .header_overlay {
+        display: none;
+    }
 }
 
 @media (max-width: 1280px) {
+
+    header.open {
+        .header_cont .hidd_cont {
+            transform: translateX(0%);
+        }
+    }
+
+    .header_cont .hidd_cont .menu li.drop:hover .cont svg {
+        transform: rotate(0) translateY(-3px);
+
+    }
+
     .header_cont {
 
+
+        .mobile_phone {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
         .btn_open_menu {
             display: block;
         }
@@ -239,6 +261,10 @@ header {
             max-width: 375px;
             background-color: $color-blue;
             padding: 15px;
+            z-index: 10;
+            background-image: url("./../img/back_svg.svg");
+            background-size: cover;
+            background-position: center;
 
             .contacts {
                 display: none;
@@ -327,6 +353,11 @@ header {
 
 
                 li.open.drop {
+
+                    .cont svg {
+                        transform: rotate(180deg) translateY(0px);
+                    }
+
                     .drop_menu {
                         display: flex;
                         margin-bottom: 20px;
@@ -338,9 +369,32 @@ header {
 
     }
 
+    .header_cont .hidd_cont .button {
+        margin-top: auto;
+        max-width: none;
+        border: 1px solid $color-black-1;
+        background-color: $color-black-1;
+        min-height: 50px;
+    }
+
+    .header_overlay {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: $color-black-1;
+        z-index: 9;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity .5s, visibility .5s;
+    }
+
     header.open {
-        .header_cont .hidd_cont {
-            transform: translateX(0%);
+        .header_overlay {
+            opacity: 1;
+            visibility: visible;
         }
     }
+
 }

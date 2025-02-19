@@ -39,20 +39,25 @@ document.addEventListener("DOMContentLoaded", function () {
     const header = document.querySelector('header');
     const headerOverlay = header.querySelector('.header_overlay');
 
-    if (document.querySelector('.btn-menu')) { // Клик по кнопке для открытия меню и клик по header_overlay
-        const btnMenuToggle = document.querySelectorAll('.btn-menu');
 
-        btnMenuToggle.forEach(element => {
-            element.addEventListener('click', () => {
-                toggleClass(header, "open");
-            })
-        });
+    const btnMenuClose = document.querySelectorAll('.btn_close_menu');
+    const btnMenuOpen = document.querySelectorAll('.btn_open_menu');
 
-        if (headerOverlay) {
-            headerOverlay.addEventListener('click', () => {
-                removeClass(header, "open");
-            })
-        }
+    btnMenuClose.forEach(element => {
+        element.addEventListener('click', () => {
+            removeClass(header, "open");
+        })
+    });
+    btnMenuOpen.forEach(element => {
+        element.addEventListener('click', () => {
+            addClass(header, "open");
+        })
+    });
+
+    if (headerOverlay) {
+        headerOverlay.addEventListener('click', () => {
+            removeClass(header, "open");
+        })
     }
 
     if (document.querySelector('header .menu li.drop')) {
