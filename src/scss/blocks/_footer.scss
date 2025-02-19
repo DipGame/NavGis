@@ -1,0 +1,155 @@
+footer {
+    background-color: $color-black-1;
+    display: flex;
+
+    padding: 50px 0 30px;
+
+    * {
+        color: $color-white;
+    }
+}
+
+.footer_cont {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    .top {
+        width: 100%;
+        max-width: 1320px;
+        padding: 0 15px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+
+        .logo {
+            font-family: Geologica;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 37.5px;
+            letter-spacing: 0%;
+            white-space: nowrap;
+            width: 300px;
+        }
+
+        .logo:hover {
+            color: $color-white !important;
+        }
+
+        .menu {
+            margin-right: auto;
+            display: grid;
+            grid-template-columns: repeat(2, 190px);
+            max-width: 410px;
+            gap: 25px 30px;
+
+            li {
+
+                a {
+                    font-family: Geologica;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 22.4px;
+                    letter-spacing: 0%;
+                }
+            }
+
+            li.active {
+
+                a {
+                    color: $color-blue;
+                }
+            }
+        }
+
+        .contacts {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+
+            .adres {
+                font-family: Geologica;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 22.4px;
+                letter-spacing: 0%;
+            }
+
+            .links_cont {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                a {
+                    font-family: Geologica;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 22.5px;
+                    letter-spacing: 0%;
+                    text-align: end;
+                }
+            }
+        }
+    }
+
+    .bot {
+        padding-top: 30px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        border-top: 1px solid #FFFFFF12;
+
+        .cont {
+            width: 100%;
+            max-width: 1320px;
+            padding: 0 15px;
+            margin: 0 auto;
+            display: flex;
+            gap: 20px;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            .prava {
+                font-family: Inter;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 16.94px;
+                letter-spacing: 0%;
+                opacity: .5;
+            }
+
+            .politica {
+                font-family: Inter;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 16.94px;
+                letter-spacing: 0%;
+            }
+        }
+    }
+}
+
+@media (max-width: 960px) {
+    .footer_cont .top {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer_cont .top .contacts {
+        gap: 30px;
+    }
+
+    .footer_cont .top .contacts .links_cont a {
+        text-align: start;
+    }
+}
+
+@media (max-width: 500px) {
+    .footer_cont .top .menu {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-between;
+        margin-right: 0;
+    }
+}

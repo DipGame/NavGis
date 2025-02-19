@@ -4,6 +4,9 @@ $color-grey: #F7F7F7;
 $color-grey-2: #A1A1AA;
 $color-blue: #11357D;
 $color-white: #FFF;
+$color-red: #EF4444;
+
+$cursor-hover-white: url('./../img/cursor.svg') 7 0, pointer;
 
 * {
 	box-sizing: border-box !important;
@@ -151,7 +154,7 @@ h6 {
 a {
 	text-decoration: none;
 	transition: .5s;
-	cursor: pointer;
+	cursor: $cursor-hover-white;
 }
 
 a:hover {
@@ -212,7 +215,7 @@ main {
 	height: 50px;
 	width: 100%;
 	transition: .5s;
-	cursor: pointer;
+	cursor: $cursor-hover-white;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -222,10 +225,10 @@ main {
 }
 
 .button:hover {
-	background-color: $color-blue;
+	background-color: $color-black;
 	transition: .5s;
 	color: $color-white !important;
-	border: 1px solid $color-blue;
+	border: 1px solid $color-black;
 }
 
 .button_v2 {
@@ -239,7 +242,7 @@ main {
 	height: 50px;
 	width: 100%;
 	transition: .5s;
-	cursor: pointer;
+	cursor: $cursor-hover-white;
 	display: flex;
 	justify-content: center;
 	align-items: center;
