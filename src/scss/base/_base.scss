@@ -222,10 +222,10 @@ main {
 }
 
 .button:hover {
-	background-color: $color-white;
+	background-color: $color-blue;
 	transition: .5s;
-	color: $color-blue !important;
-	border: 1px solid $color-white;
+	color: $color-white !important;
+	border: 1px solid $color-blue;
 }
 
 .button_v2 {
