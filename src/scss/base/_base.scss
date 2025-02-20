@@ -255,7 +255,7 @@ main {
 	background-color: $color-blue;
 	border: 1px solid $color-blue;
 	transition: .5s;
-	color: $color-blue !important;
+	color: $color-white !important;
 }
 
 button:disabled {
@@ -400,4 +400,8 @@ button:disabled:hover {
 			}
 		}
 	}
+}
+
+[data-href] {
+	cursor: $cursor-hover-white;
 }

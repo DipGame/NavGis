@@ -1,0 +1,204 @@
+.main_services_section {
+    background-image: url('./../img/back_svg_5.svg');
+    background-size: cover;
+}
+
+.main_services {
+    padding: 100px 0;
+
+    h2 {
+        margin-bottom: 30px;
+    }
+
+    .default {
+        margin-bottom: 40px;
+        margin-right: auto;
+
+        div,
+        li,
+        p,
+        a,
+        span,
+        section,
+        td,
+        button {
+            max-width: 848px;
+
+        }
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+
+        .card {
+            border-radius: 15px;
+            overflow: hidden;
+            background-color: #F7F7F7;
+
+            .img {
+                height: 240px;
+                width: 100%;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                }
+            }
+
+            .cont {
+                padding: 30px;
+                display: flex;
+                flex-direction: column;
+                height: auto;
+
+                h3 {
+                    font-family: Geologica;
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 32px;
+                    letter-spacing: 0%;
+                    color: #11357D;
+                    margin-bottom: 10px;
+                    text-transform: uppercase;
+                }
+
+                p {
+                    display: -webkit-box;
+                    -webkit-line-clamp: 4;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    font-family: Geologica;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 19.6px;
+                    letter-spacing: 0%;
+                    margin-bottom: 15px;
+                }
+
+                .help_cont {
+                    margin-top: auto;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+
+                    .price {
+                        font-family: Geologica;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 22.4px;
+                        letter-spacing: 0%;
+                        color: #11357D;
+                        white-space: nowrap;
+
+                        span {
+                            font-family: Geologica;
+                            font-weight: 600;
+                            font-size: 16px;
+                            line-height: 22.4px;
+                            letter-spacing: 0%;
+                            color: #11357D;
+                            white-space: nowrap;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 960px) {
+    .main_services .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 720px) {
+    .main_services .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .main_services {
+        padding: 70px 0 0;
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        .default {
+            margin-bottom: 30px;
+            // margin-right: auto;
+
+            div,
+            li,
+            p,
+            a,
+            span,
+            section,
+            td,
+            button {
+                max-width: none;
+            }
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 15px;
+
+            .card {
+                border-radius: 15px;
+                overflow: hidden;
+                background-color: #F7F7F7;
+
+                .img {
+                    height: auto;
+                    aspect-ratio: 345/240;
+                }
+
+                .cont {
+                    padding: 20px;
+
+                    h3 {
+                        font-family: Geologica;
+                        font-weight: 600;
+                        font-size: 18px;
+                        line-height: 32px;
+                        letter-spacing: 0%;
+                        margin-bottom: 10px;
+                    }
+
+                    p {
+                        display: none;
+                    }
+
+                    .help_cont {
+                        gap: 10px;
+
+                        .price {
+                            font-family: Geologica;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 22.4px;
+                            letter-spacing: 0%;
+                            display: block;
+
+                            span {
+                                font-family: Geologica;
+                                font-weight: 600;
+                                font-size: 16px;
+                                line-height: 22.4px;
+                                letter-spacing: 0%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

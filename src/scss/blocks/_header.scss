@@ -4,6 +4,14 @@ header {
     }
 }
 
+header.absolute {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+}
+
 .header_cont {
     display: flex;
     justify-content: space-between;
