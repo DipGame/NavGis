@@ -316,5 +316,22 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
+    if (document.querySelector('.swiperTabs')) {
+        const allSwiperTabs = document.querySelectorAll('.swiperTabs');
+
+        allSwiperTabs.forEach(swiperTabs => {
+            let swiperTabSliders = swiperTabs.querySelectorAll('[data-tab]');
+
+            swiperTabSliders.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    swiperTabSliders.forEach(sw => {
+                        removeClass(sw, "active");
+                    })
+                    addClass(tab, "active");
+                })
+            });
+        });
+    }
+
     console.log('index.js finish work');
 });
