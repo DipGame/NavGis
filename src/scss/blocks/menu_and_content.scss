@@ -1,0 +1,11 @@
+.menu_and_content {
+    margin-bottom: 100px;
+    display: flex;
+    gap: 30px;
+}
+
+@media (max-width: 500px) {
+    .menu_and_content {
+        margin-bottom: 50px;
+    }
+}

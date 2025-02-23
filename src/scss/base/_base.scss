@@ -13,6 +13,12 @@ $cursor-hover-white: url('./../img/cursor.svg') 7 0, pointer;
 	background-repeat: no-repeat !important;
 	word-break: break-word !important;
 	color: $color-black-1;
+
+	font-family: Geologica;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0%;
 }
 
 html {
@@ -29,21 +35,6 @@ body {
 
 .no-scroll {
 	overflow-y: hidden;
-}
-
-div,
-li,
-p,
-a,
-span,
-section,
-td,
-button {
-	font-family: Geologica;
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 24px;
-	letter-spacing: 0%;
 }
 
 h1 {
@@ -74,7 +65,7 @@ h2 {
 }
 
 h1.title {
-	margin: 50px auto 30px;
+	margin: 0 auto 30px;
 	width: 100%;
 	max-width: 1320px;
 	padding: 0 15px;
@@ -83,9 +74,9 @@ h1.title {
 
 
 @media (max-width: 500px) {
-	// h1.title {
-	// 	margin: 50px auto 30px;
-	// }
+	h1.title {
+		margin: 0 auto 20px;
+	}
 
 	// .def_title {
 	// 	margin-bottom: 20px;
@@ -109,13 +100,13 @@ h6 {
 
 @media (max-width: 500px) {
 
-	// h1 {
-	// 	font-family: Unbounded;
-	// 	font-weight: 500;
-	// 	font-size: 30px;
-	// 	line-height: 37.2px;
-	// 	letter-spacing: 0%;
-	// }
+	h1 {
+		font-family: Geologica;
+		font-weight: 700;
+		font-size: 30px;
+		line-height: 37.5px;
+		letter-spacing: 0%;
+	}
 
 	h2 {
 		font-family: Geologica;
@@ -371,37 +362,25 @@ button:disabled:hover {
 	color: $color-white;
 }
 
-.bread {
-
-	ul.def_div {
-		display: flex;
-		gap: 12px;
-		align-items: center;
-		flex-wrap: wrap;
-		padding: 20px 15px;
-		width: 100px;
-		max-width: 1320px;
-
-		li {
-			font-family: Geologica;
-			font-weight: 400;
-			font-size: 12px;
-			line-height: 15px;
-			letter-spacing: 0%;
-			color: $color-grey-2;
-
-			a {
-				font-family: Geologica;
-				font-weight: 400;
-				font-size: 12px;
-				line-height: 15px;
-				letter-spacing: 0%;
-				color: $color-black;
-			}
-		}
-	}
-}
-
 [data-href] {
 	cursor: $cursor-hover-white;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateX(-50%) translateY(-50%);
+	min-width: 40px;
+	min-height: 40px;
+	max-width: 40px;
+	max-height: 40px;
+	margin: 0;
+}
+
+.swiper-button-next {
+	transform: translateX(50%) translateY(-50%) rotate(180deg);
+	left: auto;
+	right: 0;
 }

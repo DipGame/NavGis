@@ -1,0 +1,58 @@
+.bread {
+    width: 100%;
+
+    .def_div {
+        padding: 20px 0;
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        gap: 8px 12px;
+        flex-wrap: wrap;
+
+        li {
+            font-family: Geologica;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 15px;
+            letter-spacing: 0%;
+            color: #A1A1AA;
+
+            a {
+                font-family: Geologica;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 15px;
+                letter-spacing: 0%;
+                color: #1A1A1A;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .bread {
+        width: 100%;
+        overflow-x: scroll;
+    
+        .def_div {
+            flex-wrap: nowrap;
+            white-space: nowrap;
+
+            li {
+                padding-right: 15px;
+            }
+        }
+    }
+
+    .bread {
+        overflow: auto;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    
+    .bread::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+    }
+}

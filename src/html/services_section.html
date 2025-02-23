@@ -18,15 +18,19 @@
 </head>
 
 <body>
-
-	@@include('blocks/_header.html')
+	@@include('blocks/_header_2.html')
 	<main>
-		@@include('blocks/_main_baner.html')
-		@@include('blocks/_main_services.html')
-		@@include('blocks/_main_jobs.html')
-		@@include('blocks/_main_mission.html')
-		@@include('blocks/_main_stages.html')
-		@@include('blocks/_main_equipment.html')
+		@@include('blocks/_bread.html')
+		<h1 class="title">
+			Инженерно-геологические изыскания
+		</h1>
+		@@include('blocks/_services_baner.html')
+		<section class="padding flex services_menu_and_content">
+			<div class="def_div menu_and_content">
+				@@include('blocks/_services_menu.html')
+				@@include('blocks/_services_content.html')
+			</div>
+		</section>
 	</main>
 	@@include('blocks/_footer_form.html')
 	@@include('blocks/_footer.html')

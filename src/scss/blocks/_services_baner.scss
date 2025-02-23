@@ -1,0 +1,59 @@
+.services_baner {
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    min-height: 420px;
+    background-size: cover;
+    background-position: center;
+
+    ul {
+        margin-left: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        li {
+            background-color: $color-blue;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            gap: 15px;
+            border-radius: 8px;
+
+
+            * {
+                color: #FFF;
+            }
+
+            span {
+                font-family: Geologica;
+                font-weight: 600;
+                font-size: 48px;
+                line-height: 60px;
+                letter-spacing: 0%;
+                text-align: center;      
+                min-height: 80px;
+                min-width: 90px;
+                white-space: nowrap;
+                display: flex;
+                align-items: center;
+                justify-content: center;  
+            }
+        }
+    }
+}
+
+@media (max-width: 720px) {
+    .services_baner ul li {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .services_baner {
+        min-height: auto;
+        aspect-ratio: 375/243;
+    }
+}

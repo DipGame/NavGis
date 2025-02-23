@@ -317,18 +317,44 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     if (document.querySelector('.swiperTabs')) {
-        const allSwiperTabs = document.querySelectorAll('.swiperTabs');
+        const tabs = document.querySelectorAll('.tabs');
 
-        allSwiperTabs.forEach(swiperTabs => {
-            let swiperTabSliders = swiperTabs.querySelectorAll('[data-tab]');
+        tabs.forEach(tabs => {
+            let swiperTabSliders = tabs.querySelectorAll('.swiper-slide[data-tab]');
+            let tabs_cont = tabs.querySelectorAll('#tab-cont[data-tab]');
+
+            let num = 0;
+
+            let dataFirstTab = null;
 
             swiperTabSliders.forEach(tab => {
+
+                if (num == 0) {
+                    addClass(tab, 'active');
+                    dataFirstTab = tab.getAttribute('data-tab');
+                }
+
                 tab.addEventListener('click', () => {
                     swiperTabSliders.forEach(sw => {
                         removeClass(sw, "active");
                     })
+                    tabs_cont.forEach(tabCont => {                        
+                        if (tabCont.getAttribute('data-tab') == tab.getAttribute('data-tab')) {
+                            removeClass(tabCont, "invise");
+                        } else {
+                            addClass(tabCont, "invise");
+                        }
+                    });
                     addClass(tab, "active");
                 })
+
+                num++;
+            });
+
+            tabs_cont.forEach(tabCont => {
+                if (tabCont.getAttribute('data-tab') != dataFirstTab) {
+                    addClass(tabCont, "invise");
+                } 
             });
         });
     }

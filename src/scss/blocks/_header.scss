@@ -4,6 +4,8 @@ header {
     }
 }
 
+
+
 header.absolute {
     position: absolute;
     top: 0;
@@ -226,9 +228,90 @@ header.absolute {
     .header_overlay {
         display: none;
     }
+
+    header.white {
+        * {
+            color: $color-black !important;
+        }
+    
+        .header_cont {
+            .logo:hover {
+                color: $color-black !important;
+            }
+    
+            .menu {
+                li:hover {
+                    .first_link {
+                        color: $color-black !important;
+                    }
+                }
+    
+                li.drop {
+    
+                    .cont {
+    
+                        svg {
+    
+                            path {
+                                stroke: $color-black;
+                            }
+                        }
+                    }
+    
+                    .drop_menu {
+    
+                        li {
+    
+                            a {
+                                color: $color-white !important;
+                            }
+    
+                            a:hover {
+                                border-bottom: 2px solid $color-white;
+                                transition: 0s;
+                                color: $color-white !important;
+                            }
+                        }
+                    }
+                }
+    
+                li.drop:hover {
+                    cursor: pointer;
+    
+                    .cont {
+    
+                        .first_link {
+                            color: $color-blue !important;
+                        }
+    
+                        svg {
+    
+                            path {
+                                stroke: $color-blue;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+        .header_cont .hidd_cont .contacts .phone:hover {
+            color: $color-blue !important;
+        }
+    
+        .header_cont .hidd_cont .button {
+            border: 1px solid $color-black;
+        }
+    }
 }
 
 @media (max-width: 1280px) {
+
+    header.white {
+        .header_cont .logo {
+            color: $color-black !important;
+        }
+    }
 
     header.open {
         .header_cont .hidd_cont {
@@ -249,6 +332,7 @@ header.absolute {
             justify-content: center;
             align-items: center;
         }
+
         .btn_open_menu {
             display: block;
         }

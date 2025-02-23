@@ -1,0 +1,43 @@
+.serv_menu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 300px;
+
+    li {
+
+
+        a {
+            border-radius: 8px;
+            padding: 13px 20px;
+            min-height: 70px;
+            font-family: Geologica;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 22.4px;
+            letter-spacing: 0%;
+            display: block;
+            background-color: #F7F7F7;
+        }
+
+        a:hover {
+            background-color: $color-blue;
+            color: #FFF !important;
+        }
+    }
+
+    li.active {
+
+        a {
+            background-color: $color-blue;
+            color: #FFF !important;
+        }
+    }
+}
+
+@media (max-width: 1280px) {
+    .serv_menu {
+        display: none;
+    }
+}
