@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Стартовый шаблон</title>
+	<link rel="stylesheet" href="./fonts/Inter.css" />
+	<link rel="stylesheet" href="./fonts/Geologica.css" />
+	<link rel="stylesheet" href="./css/jquery.fancybox.css" />
+	<link rel="stylesheet" href="./css/swiper-bundle.css" />
+	<link rel="stylesheet" href="./css/main.css" />
+
+	<script src="./js/jquery-3.7.1.min.js"></script>
+	<script src="./js/jquery.fancybox.js"></script>
+	<script src="./js/swiper-bundle.js"></script>
+</head>
+
+<body>
+	<header class="padding flex white">
+    <div class="header_overlay">
+
+    </div>
+    <div class="def_div header_cont">
+
+        <svg class="btn_open_menu" width="44" height="40" viewBox="0 0 44 40" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <rect width="44" height="40" rx="6" fill="#11357D" />
+            <path
+                d="M32.5 19H11.5C11.2239 19 11 19.1343 11 19.3V19.9C11 20.0657 11.2239 20.2 11.5 20.2H32.5C32.7761 20.2 33 20.0657 33 19.9V19.3C33 19.1343 32.7761 19 32.5 19Z"
+                fill="white" />
+            <path
+                d="M32.5 12H11.5C11.2239 12 11 12.1343 11 12.3V12.9C11 13.0657 11.2239 13.2 11.5 13.2H32.5C32.7761 13.2 33 13.0657 33 12.9V12.3C33 12.1343 32.7761 12 32.5 12Z"
+                fill="white" />
+            <path
+                d="M32.5 26H11.5C11.2239 26 11 26.1343 11 26.3V26.9C11 27.0657 11.2239 27.2 11.5 27.2H32.5C32.7761 27.2 33 27.0657 33 26.9V26.3C33 26.1343 32.7761 26 32.5 26Z"
+                fill="white" />
+        </svg>
+
+        <svg class="btn_close_menu" width="44" height="40" viewBox="0 0 44 40" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <rect width="44" height="40" rx="6" fill="black" />
+            <path
+                d="M29.2028 12.7972L14.3536 27.6464C14.1583 27.8417 14.095 28.095 14.2121 28.2121L14.6364 28.6364C14.7536 28.7536 15.0068 28.6902 15.2021 28.495L30.0513 13.6457C30.2466 13.4505 30.3099 13.1972 30.1927 13.08L29.7685 12.6558C29.6513 12.5386 29.3981 12.6019 29.2028 12.7972Z"
+                fill="white" />
+            <path
+                d="M30.0514 27.2028L15.2022 12.3536C15.0069 12.1583 14.7537 12.095 14.6365 12.2121L14.2122 12.6364C14.0951 12.7536 14.1584 13.0068 14.3537 13.2021L29.2029 28.0513C29.3982 28.2466 29.6514 28.3099 29.7686 28.1927L30.1928 27.7685C30.31 27.6513 30.2467 27.3981 30.0514 27.2028Z"
+                fill="white" />
+        </svg>
+
+
+        <a href="/" class="logo">
+            НавГис
+        </a>
+
+        <a href="tel:+7 (3462) 77-41-45" class="mobile_phone">
+            <svg width="44" height="40" viewBox="0 0 44 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="44" height="40" rx="6" fill="#11357D" />
+                <g clip-path="url(#clip0_213_7978)">
+                    <path
+                        d="M25.5196 22.4695L23.8081 24.6093C21.1573 23.0513 18.9483 20.8423 17.3903 18.1915L19.5301 16.48C19.7807 16.2792 19.9579 16.0011 20.0338 15.6891C20.1098 15.377 20.0804 15.0486 19.9501 14.755L18.0001 10.3638C17.8602 10.0487 17.6131 9.79363 17.3026 9.6439C16.9922 9.49417 16.6386 9.45958 16.3051 9.54627L12.5926 10.5093C12.2461 10.5997 11.9448 10.8142 11.7459 11.1119C11.547 11.4097 11.4642 11.7701 11.5133 12.1248C12.1648 16.7641 14.309 21.0652 17.6217 24.3779C20.9343 27.6906 25.2355 29.8348 29.8748 30.4863C30.2294 30.5352 30.5896 30.4523 30.8872 30.2534C31.1848 30.0545 31.3991 29.7534 31.4896 29.407L32.4526 25.6945C32.5389 25.3612 32.5042 25.0081 32.3547 24.698C32.2051 24.3879 31.9504 24.1409 31.6358 24.001L27.2446 22.051C26.9512 21.9206 26.6228 21.8909 26.3108 21.9666C25.9988 22.0423 25.7206 22.2191 25.5196 22.4695Z"
+                        stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="square" />
+                </g>
+                <defs>
+                    <clipPath id="clip0_213_7978">
+                        <rect width="24" height="24" fill="white" transform="translate(10 8)" />
+                    </clipPath>
+                </defs>
+            </svg>
+        </a>
+
+        <div class="hidd_cont">
+
+            <div class="mob_cont">
+
+                <div class="contacts">
+                    <a href="tel:+7 (3462) 77-41-45" class="phone">
+                        +7 (3462) 77-41-45
+                    </a>
+                    <p class="adres">
+                        г. Сургут, ул.Базовая, д.1/1
+                    </p>
+                </div>
+
+                <svg class="btn_close_menu" width="44" height="40" viewBox="0 0 44 40" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect width="44" height="40" rx="6" fill="black" />
+                    <path
+                        d="M29.2028 12.7972L14.3536 27.6464C14.1583 27.8417 14.095 28.095 14.2121 28.2121L14.6364 28.6364C14.7536 28.7536 15.0068 28.6902 15.2021 28.495L30.0513 13.6457C30.2466 13.4505 30.3099 13.1972 30.1927 13.08L29.7685 12.6558C29.6513 12.5386 29.3981 12.6019 29.2028 12.7972Z"
+                        fill="white" />
+                    <path
+                        d="M30.0514 27.2028L15.2022 12.3536C15.0069 12.1583 14.7537 12.095 14.6365 12.2121L14.2122 12.6364C14.0951 12.7536 14.1584 13.0068 14.3537 13.2021L29.2029 28.0513C29.3982 28.2466 29.6514 28.3099 29.7686 28.1927L30.1928 27.7685C30.31 27.6513 30.2467 27.3981 30.0514 27.2028Z"
+                        fill="white" />
+                </svg>
+            </div>
+
+
+
+            <ul class="menu" id="top-menu">
+
+                <li class="">
+                    <a class="first_link" href="/">
+                        Главная
+                    </a>
+                </li>
+
+                <li class="drop active">
+
+                    <div class="cont">
+                        <a class="link_drop first_link" href="/services/">
+                            Услуги
+                        </a>
+                        <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.8462 4.6001L6.92308 9.7201L2 4.6001" stroke="white" stroke-width="1.5"
+                                stroke-miterlimit="10" stroke-linecap="square" />
+                        </svg>
+                    </div>
+                    <ul class="drop_menu">
+
+                        <li>
+                            <a href="/services/depilyatsiya/">
+                                Геологические изыскания </a>
+                        </li>
+
+                        <li>
+                            <a href="/services/inektsionnye-metodiki/">
+                                Геодезические изыскания </a>
+                        </li>
+
+                        <li>
+                            <a href="/services/kosmetologiya-litsa/">
+                                Экологические изыскания </a>
+                        </li>
+
+                        <li>
+                            <a href="/services/kosmetologiya-tela/">
+                                Гидрометеорогические изыскания </a>
+                        </li>
+
+                        <li>
+                            <a href="/services/lazernaya-kosmetologiya/">
+                                Гидротехнические изыскания </a>
+                        </li>
+
+                    </ul>
+                </li>
+
+                <li>
+                    <a class="first_link" href="/">
+                        Документы
+                    </a>
+                </li>
+                <li>
+                    <a class="first_link" href="/">
+                        Проекты
+                    </a>
+                </li>
+                <li>
+                    <a class="first_link" href="/">
+                        Вакансии
+                    </a>
+                </li>
+                <li>
+                    <a class="first_link" href="/">
+                        Фото
+                    </a>
+                </li>
+                <li>
+                    <a class="first_link" href="/">
+                        Контакты
+                    </a>
+                </li>
+
+            </ul>
+
+            <div class="contacts">
+                <p class="adres">
+                    г. Сургут, ул.Базовая, д.1/1
+                </p>
+                <a href="tel:+7 (3462) 77-41-45" class="phone">
+                    +7 (3462) 77-41-45
+                </a>
+            </div>
+
+            <a class="button">
+                Заказать изыскания
+            </a>
+        </div>
+
+    </div>
+</header>
+	<main>
+		<div class="bread flex padding ">
+    <ul class="def_div">
+
+        <li>
+
+            <a href="/">
+                Главная
+            </a>
+        </li>
+        <li>/</li>
+        <li>
+
+            <a href="/services/">
+                Услуги
+            </a>
+        <li>/</li>
+        <li>
+            Инженерно-геологические изыскания
+        </li>
+    </ul>
+</div>
+        <section class="padding flex about_baner_section">
+    <div class="def_div about_baner">
+        <h1>
+            Наша миссия
+        </h1>
+        <div class="default">
+            <p>
+                Создавать обьекты промышленного и гражданского назначения, предоставляя качественную проектно-изыскательскую документацию, исследуя  окружающую природную и техногенную среду с применением инновационных технологий и оборудования!!
+            </p>
+        </div>
+    </div>
+</section>
+        <section class="padding flex about_info_section">
+    <div class="def_div about_info">
+        <div class="flex">
+            <div class="text_cont">
+                <h2>
+                    Персонал
+                </h2>
+                <p>
+                    Качественный персонал, который мы постоянно обучаем как по узким направлениям, так и в сфере управления.
+                </p>
+            </div>
+            <div class="img" style="background-image: url('./img/img_5.png');">
+                
+            </div>
+        </div>
+        <div class="flex revers">
+            <div class="text_cont">
+                <h2>
+                    Современная техника
+                </h2>
+                <p>
+                    Применение самой современной техники: именно наша компания первой начала использовать двухсекционные вездеходы на пневмоходу круглогодично не зависимо от условий проходимости.
+                </p>
+            </div>
+            <div class="img" style="background-image: url('./img/img_5.png');">
+                
+            </div>
+        </div>
+        <div class="flex">
+            <div class="text_cont">
+                <h2>
+                    Буровая установка Т-2
+                </h2>
+                <p>
+                    Мы участвовали в создании самой мощной и производительной буровой установки Т-2 на базе двухсекционного вездехода на пневмоходу – это позволяет выполнять буровые работы и полевые испытания грунтов в труднопроходимых районах .
+                </p>
+            </div>
+            <div class="img" style="background-image: url('./img/img_5.png');">
+                
+            </div>
+        </div>
+        <div class="flex revers">
+            <div class="text_cont">
+                <h2>
+                    Буровая установка Т-3
+                </h2>
+                <p>
+                    Применение самой современной техники: именно наша компания первой начала использовать двухсекционные вездеходы на пневмоходу круглогодично не зависимо от условий проходимости.
+                </p>
+            </div>
+            <div class="img" style="background-image: url('./img/img_5.png');">
+                
+            </div>
+        </div>
+        <div class="flex">
+            <div class="text_cont">
+                <h2>
+                    Новый этап изысканий
+                </h2>
+                <p>
+                    На данный момент мы приступаем к новому этапу – этапу развития полевых изысканий с применением буровых установок на АЭРОСАНЯХ и грузовых ДРОНОВ.
+                </p>
+            </div>
+            <div class="img" style="background-image: url('./img/img_5.png');">
+                
+            </div>
+        </div>
+        
+    </div>
+</section>
+        <section class="padding flex about_info_section v2">
+    <div class="def_div about_info">
+        <div class="flex">
+            <div class="text_cont">
+                <h2>
+                    Музей «Изыскателя югры»
+                </h2>
+                <div class="default">
+                    <p>
+                        Мы, как граждане, патриоты своей страны и руководители крупнейших частных российских компаний заинтересованы в мотивации молодежи к освоению рабочих и инженерных специальностей.
+                    </p>
+                    <p>
+                        Повышение социального статуса рабочего и инженера, научно-исследовательской и инновационной деятельности.
+                    </p>
+                    <p>
+                        В связи с этим компания «НавГис» считает необходимым принимать участие в развитии смежных и дружественных отраслей, в том числе тех сфер деятельности, которые популяризируют профессию изыскатель. Мы создаем в г.Сургуте музей «Изыскателя югры».
+                    </p>
+                </div>
+                
+            </div>
+            <div class="img" style="background-image: url('./img/img_5.png');">
+                
+            </div>
+        </div>
+        <div class="flex revers">
+            <div class="text_cont">
+                <h2>
+                    Фильм «Изыскатель»
+                </h2>
+                <div class="default">
+                    <p>
+                        С 1 ноября 2024 года «НавГис» в содружестве с московской Кинокомпанией «Улица Сергея Эйзенштейна» находится в подготовительном периоде полнометражного художественного фильма с рабочим названием «Изыскатель». В данный момент идет завершающая фаза работы над сценарием, отбор локаций, подготовка к проведению кастингов, разработка технического и художественного решения.
+                    </p>
+                </div>
+                
+            </div>
+            <div class="img" style="background-image: url('./img/img_5.png');">
+                
+            </div>
+        </div>
+        
+        
+    </div>
+</section>
+	</main>
+	<section class="padding flex footer_form_section">
+    <h2>
+        Свяжитесь С нами
+    </h2>
+    <div class="def_div footer_form">
+        <div class="contacts">
+            <ul>
+                <li>
+                    <h4>
+                        Офис
+                    </h4>
+                    <p class="text adres">
+                        г. Сургут, ул. Базовая, д.1/15
+                    </p>
+                </li>
+                <li>
+                    <h4>
+                        Телефон
+                    </h4>
+                    <a href="tel:+7 (3462) 77-41-45" class="text phone">
+                        +7 (3462) 77-41-45
+                    </a>
+                </li>
+                <li>
+                    <h4>
+                        Email
+                    </h4>
+                    <a href="mailto:office@navgis.ru" class="text email">
+                        office@navgis.ru
+                    </a>
+                </li>
+            </ul>
+            <div class="bot">
+                <p>
+                    По вопросам трудоустройства и предложений, вы можете связаться с нами по указанному телефону
+                    и почте:
+                </p>
+                <div class="links">
+                    <a class="link" href="tel:+7 (3462) 77-41-45">
+                        +7 (3462) 77-41-45
+                    </a>
+                    <a class="link" href="mailto:office@navgis.ru">
+                        office@navgis.ru
+                    </a>
+                </div>
+            </div>
+        </div>
+        <form>
+            <h3>
+                Мы перезвоним вам
+            </h3>
+            <div class="inputs_cont">
+                <div class="input_cont err"> <input type="text" name="name" placeholder="Ваше имя">
+                    <span>
+                        Неверный формат поля
+                    </span>
+                </div>
+                <div class="input_cont"> <input type="text" name="phone" placeholder="Ваш номер телефона">
+                    <span>
+                        Неверный формат поля
+                    </span>
+                </div>
+            </div>
+            <textarea name="text" maxlength="200" placeholder="Ваше сообщение"></textarea>
+            <div class="checkbox_cont">
+                <div class="checkbox">
+                    <svg width="11" height="8" viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 4L4 7L10 1" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <p>
+                    Согласен с условиями
+                    <a href="">
+                        политики конфиденциальности
+                    </a>
+                </p>
+            </div>
+            <button type="submit" class="button">
+                Отправить заявку
+            </button>
+        </form>
+    </div>
+</section>
+	<footer class="flex">
+    <div class="footer_cont">
+        <div class="top">
+            <a href="/" class="logo">
+                НавГис
+            </a>
+            <ul class="menu">
+                <li class="active">
+                    <a href="">
+                        Услуги
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        Вакансии
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        Документы
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        Фото
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        Проекты
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        Контакты
+                    </a>
+                </li>
+            </ul>
+            <div class="contacts">
+                <p class="adres">
+                    г. Сургут, ул. Базовая, д.1/1
+                </p>
+
+                <div class="links_cont">
+                    <a class="phone" href="tel:+7 (3462) 77-41-45">
+                        +7 (3462) 77-41-45
+                    </a>
+                    <a class="email" href="mailto:office@navgis.ru">
+                        office@navgis.ru
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="bot">
+            <div class="cont">
+                <p class="prava">
+                    ©2005-2024 ООО «НавГиС». Все права защищены.
+                </p>
+                <a class="politica" href="">
+                    Политика конфиденциальности
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+	<script src="./js/addSwiper.js"></script>
+	<script src="./js/copyElements.js"></script>
+	<script src="./js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Стартовый шаблон</title>
+	<link rel="stylesheet" href="./fonts/Inter.css" />
+	<link rel="stylesheet" href="./fonts/Geologica.css" />
+	<link rel="stylesheet" href="./css/jquery.fancybox.css" />
+	<link rel="stylesheet" href="./css/swiper-bundle.css" />
+	<link rel="stylesheet" href="./css/main.css" />
+
+	<script src="./js/jquery-3.7.1.min.js"></script>
+	<script src="./js/jquery.fancybox.js"></script>
+	<script src="./js/swiper-bundle.js"></script>
+</head>
+
+<body>
+	@@include('blocks/_header_2.html')
+	<main>
+		@@include('blocks/_bread.html')
+		<h1 class="title">
+			Проекты
+		</h1>
+        @@include('blocks/_projects.html')
+	</main>
+	@@include('blocks/_footer_form.html')
+	@@include('blocks/_footer.html')
+
+	<script src="./js/addSwiper.js"></script>
+	<script src="./js/copyElements.js"></script>
+	<script src="./js/index.js"></script>
+</body>
+
+</html>

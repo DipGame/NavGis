@@ -338,12 +338,17 @@ document.addEventListener("DOMContentLoaded", function () {
                     swiperTabSliders.forEach(sw => {
                         removeClass(sw, "active");
                     })
-                    tabs_cont.forEach(tabCont => {                        
-                        if (tabCont.getAttribute('data-tab') == tab.getAttribute('data-tab')) {
+                    tabs_cont.forEach(tabCont => {
+                        if (tab.getAttribute('data-tab') == 0) {
                             removeClass(tabCont, "invise");
                         } else {
-                            addClass(tabCont, "invise");
+                            if (tabCont.getAttribute('data-tab') == tab.getAttribute('data-tab')) {
+                                removeClass(tabCont, "invise");
+                            } else {
+                                addClass(tabCont, "invise");
+                            }
                         }
+
                     });
                     addClass(tab, "active");
                 })
@@ -351,11 +356,14 @@ document.addEventListener("DOMContentLoaded", function () {
                 num++;
             });
 
-            tabs_cont.forEach(tabCont => {
-                if (tabCont.getAttribute('data-tab') != dataFirstTab) {
-                    addClass(tabCont, "invise");
-                } 
-            });
+            if (tabs.getAttribute('data-config') != 'all') {
+                tabs_cont.forEach(tabCont => {
+                    if (dataFirstTab != 0 && tabCont.getAttribute('data-tab') != dataFirstTab) {
+                        addClass(tabCont, "invise");
+                    }
+                });
+            }
+           
         });
     }
 

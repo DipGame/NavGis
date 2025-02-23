@@ -1,0 +1,161 @@
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 100px;
+
+    .swiperTabs {
+        width: 100%;
+        max-width: 100%;
+        // overflow: visible;
+
+        .swiper-slide {
+            width: fit-content;
+            font-family: Geologica;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 19.6px;
+            letter-spacing: 0%;
+            padding: 15px 20px;
+            border: 1px solid #000000;
+            border-radius: 8px;
+            cursor: $cursor-hover-white;
+            display: flex;
+            align-items: center;
+            white-space: nowrap;
+        }
+
+        .swiper-slide.active {
+            background-color: #000;
+            color: #FFF;
+        }
+
+        .swiper-slide.active:hover {
+            background-color: #000;
+            color: #FFF;
+        }
+
+        .swiper-slide:hover {
+            border: 1px solid #11357D;
+            color: #11357D;
+        }
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+
+        .card {
+            background-color: #F7F7F7;
+            border-radius: 15px;
+            padding: 20px 30px 30px;
+            display: flex;
+            flex-direction: column;
+            height: auto;
+
+            .img {
+                height: 200px;
+                width: 100%;
+                margin-bottom: 30px;
+
+                img {
+                    object-fit: contain;
+                    object-position: center;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            h3 {
+                font-family: Geologica;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 32px;
+                letter-spacing: 0%;
+                color: $color-blue;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-family: Geologica;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 25.2px;
+                letter-spacing: 0%;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                margin-bottom: 40px;
+            }
+
+            span {
+                font-family: Geologica;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 19.6px;
+                letter-spacing: 0%;
+                margin-top: auto;
+            }
+        }
+
+        .card:hover {
+            transform: scale(0.95);
+        }
+    }
+}
+
+@media (max-width: 1280px) {
+    .projects .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 720px) {
+    .projects .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .projects {
+        margin-bottom: 50px;
+
+        .swiperTabs {
+            padding: 0 15px;
+        }
+
+        .grid {
+            gap: 15px;
+
+            .card {
+                padding: 20px;
+
+                h3 {
+                    font-family: Geologica;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 32px;
+                    letter-spacing: 0%;
+                }
+
+                p {
+                    font-family: Geologica;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 22.4px;
+                    letter-spacing: 0%;
+                }
+
+                span {
+                    font-family: Geologica;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 19.6px;
+                    letter-spacing: 0%;
+                }
+            }
+        }
+    }
+}

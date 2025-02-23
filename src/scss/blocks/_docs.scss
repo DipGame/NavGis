@@ -1,0 +1,117 @@
+.docs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 100px;
+
+    .card {
+        padding: 30px 30px 40px;
+        background-color: #F7F7F7;
+        border-radius: 15px;
+        height: auto;
+
+        svg {
+            min-height: 80px;
+            max-width: 80px;
+            max-height: 80px;
+            min-width: 80px;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-family: Geologica;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 28px;
+            letter-spacing: 0%;
+            color: #000;
+            margin-bottom: 20px;
+        }
+
+        .button_v2 {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            justify-content: center;
+            max-width: 131px;
+            font-family: Geologica;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 19.6px;
+            letter-spacing: 0%;
+            text-align: center;
+            color: #000;
+            margin-top: auto;
+
+            svg {
+                min-height: 24px;
+                max-width: 24px;
+                max-height: 24px;
+                min-width: 24px;
+                margin: 0;
+
+                path {
+                    transition: .5s;
+                }
+            }
+        }
+
+        .button_v2:hover {
+
+            svg {
+                path {
+                    stroke: #FFF;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1280px) {
+    .docs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 720px) {
+    .docs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .docs {
+        gap: 15px;
+        margin-bottom: 50px;
+
+        .card {
+            padding: 20px 20px 30px;
+
+
+            h2 {
+                font-family: Geologica;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 28px;
+                letter-spacing: 0%;
+            }
+
+            .button_v2 {
+                font-family: Geologica;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 19.6px;
+                letter-spacing: 0%;
+                text-align: center;
+
+                svg {
+                    min-height: 24px;
+                    max-width: 24px;
+                    max-height: 24px;
+                    min-width: 24px;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
