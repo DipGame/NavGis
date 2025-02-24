@@ -30,6 +30,28 @@
     }
 }
 
+body.v2 .bread {
+    .def_div {
+
+        li {
+            font-family: Geologica;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 15px;
+            letter-spacing: 0%;
+            color: #A1A1AA;
+
+            a {
+                color: #FFFFFF80;
+            }
+
+            a:hover {
+                color: #FFF !important;
+            }
+        }
+    }
+}
+
 @media (max-width: 500px) {
     .bread {
         width: 100%;
